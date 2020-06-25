@@ -1,0 +1,61 @@
+.app {
+    text-align: center;
+}
+
+.app-header {
+    background-color: #173f5f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.title {
+    text-shadow: 0px 1px 5px white;
+}
+
+.label {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.mission {
+    background-color: #3caea3;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+
+    -webkit-box-shadow: 0 8px 12px -6px black;
+    -moz-box-shadow: 0 8px 12px -6px black;
+    box-shadow: 0 8px 12px -6px black;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 10px;
+}
+
+.list-item p {
+    padding-left: 10px;
+    font-size: 16pt;
+    color: black;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.profile-picture {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
