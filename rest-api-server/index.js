@@ -5,13 +5,15 @@ const Hapi = require('@hapi/hapi');
 const villainsData = [
     {
         id: 1,
-        name: 'Ratatui',
-        photo: '',
+        name: 'Loki',
+        photo:
+            'https://a9c22acaee44c3022afd-09904985198ceb8a8dc81ac3bda18303.ssl.cf3.rackcdn.com/p/30986-195933-large.jpg',
     },
     {
         id: 2,
         name: 'Thanos',
-        photo: '',
+        photo:
+            'https://i1.sndcdn.com/artworks-000342268284-w1hvch-t500x500.jpg',
     },
 ];
 
@@ -19,12 +21,13 @@ const heroesData = [
     {
         id: 1,
         name: 'Hulk',
-        photo: '',
+        photo: 'https://i1.sndcdn.com/avatars-000083309238-usu5vw-t500x500.jpg',
     },
     {
         id: 2,
         name: 'Doctor Strange',
-        photo: '',
+        photo:
+            'https://filmjunk.com/images/weblog/2016/04/doctorstrange-200x200.jpg',
     },
 ];
 

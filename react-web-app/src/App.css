@@ -29,6 +29,7 @@
 }
 
 .mission {
+    margin: 10px;
     background-color: #3caea3;
     border: 5px solid white;
     border-radius: 15px;
@@ -50,8 +51,9 @@
 .list-item p {
     padding-left: 10px;
     font-size: 16pt;
-    color: black;
-    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-shadow: 0px 1px 1px #000;
+    font-weight: bold;
 }
 
 .profile-picture {

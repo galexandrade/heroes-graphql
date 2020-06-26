@@ -1,43 +1,28 @@
 import React from 'react';
 import Mission from './components/Mission';
+import { useQuery } from '@apollo/react-hooks';
+import { gql } from 'apollo-boost';
+import { MISSIONS_QUERY } from './graphql/query';
 import './App.css';
 
-const missions = [
-    {
-        name: 'Star wars',
-        villain: {
-            name: 'Thanos',
-            photo:
-                'https://i1.sndcdn.com/artworks-000342268284-w1hvch-t500x500.jpg',
-        },
-        heroes: [
-            {
-                name: 'Hulk',
-                photo:
-                    'https://i1.sndcdn.com/avatars-000083309238-usu5vw-t500x500.jpg',
-            },
-            {
-                name: 'Doctor Strange',
-                photo:
-                    'https://filmjunk.com/images/weblog/2016/04/doctorstrange-200x200.jpg',
-            },
-        ],
-    },
-];
+const App = () => {
+    const { loading, error, data } = useQuery(MISSIONS_QUERY);
 
-function App() {
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error :(</p>;
+
     return (
         <div className="app">
             <header className="app-header">
                 <h1>Missions</h1>
             </header>
             <div className="list">
-                {missions.map((mission, index) => (
-                    <Mission {...mission} />
+                {data.missions.map((mission, index) => (
+                    <Mission key={index} {...mission} />
                 ))}
             </div>
         </div>
     );
-}
+};
 
 export default App;

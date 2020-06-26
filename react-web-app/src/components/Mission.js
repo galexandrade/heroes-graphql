@@ -6,6 +6,7 @@ const Mission = ({ name, villain, heroes }) => (
         <h2 className="title">{name}</h2>
         <div className="label">Villain:</div>
         <ListItem name={villain.name} photo={villain.photo} />
+
         <div className="label">Heroes who saved the day:</div>
         {heroes.map((hero, index) => (
             <ListItem key={index} name={hero.name} photo={hero.photo} />
