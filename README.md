@@ -14,7 +14,11 @@ To see it working locally, just follow the following steps 👇👇
 
 In the project directory, you can run:
 
-### `cd rest-api-server & yarn start`
+### `cd rest-api-server`
+
+### `yarn install`
+
+### `yarn start`
 
 It starts the REST API server<br />
 Open [http://localhost:3000](http://localhost:3000) to access the endpoints on the browser:
@@ -27,9 +31,13 @@ Open [http://localhost:3000](http://localhost:3000) to access the endpoints on t
 
 ## 2 - Start the GraphQL Server
 
-In the project directory, you can run:
+It is an ApolloServer that uses as data-source our REST endpoints. In the project directory, you can run:
 
-### `cd graphql-server & yarn start`
+### `cd graphql-server`
+
+### `yarn install`
+
+### `yarn start`
 
 It starts the GraphQL server<br />
 Open [http://localhost:4000](http://localhost:4000) to access the GraphQL playground on the browser. Try to copy and paste the following query there:
@@ -54,7 +62,11 @@ query Movies {
 
 To start the React app you can run:
 
-### `cd react-web-app & yarn test`
+### `cd react-web-app`
+
+### `yarn install`
+
+### `yarn start`
 
 Launches the react web app.<br />
 
