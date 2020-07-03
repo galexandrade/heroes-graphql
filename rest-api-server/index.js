@@ -5,15 +5,21 @@ const Hapi = require('@hapi/hapi');
 const villainsData = [
     {
         id: 1,
-        name: 'Loki',
+        name: 'Whiplash',
         photo:
-            'https://a9c22acaee44c3022afd-09904985198ceb8a8dc81ac3bda18303.ssl.cf3.rackcdn.com/p/30986-195933-large.jpg',
+            'https://ficquotes.com/images/characters/ivan-vanko-iron-man.jpg',
     },
     {
         id: 2,
         name: 'Thanos',
         photo:
             'https://i1.sndcdn.com/artworks-000342268284-w1hvch-t500x500.jpg',
+    },
+    {
+        id: 3,
+        name: 'Killmonger',
+        photo:
+            'https://pyxis.nymag.com/v1/imgs/7c3/d4d/2120f5b0b6abcda8d86c0a937d376f520b-17-killmonger-movie.rsquare.w1200.jpg',
     },
 ];
 
@@ -29,20 +35,37 @@ const heroesData = [
         photo:
             'https://filmjunk.com/images/weblog/2016/04/doctorstrange-200x200.jpg',
     },
+    {
+        id: 3,
+        name: 'Iron man',
+        photo:
+            'https://i-cdn.phonearena.com/images/article/46407-image/Iron-Man-not-Robert-Downey-Jr-already-used-by-LG-for-phone-ads.jpg',
+    },
+    {
+        id: 3,
+        name: 'Black Panther',
+        photo: 'https://avatarfiles.alphacoders.com/205/205401.png',
+    },
 ];
 
-const missionsData = [
+const moviesData = [
     {
         id: 1,
-        name: 'Star war',
+        name: 'Iron Man 2',
         villain_id: 1,
-        heroes_ids: [1],
+        heroes_ids: [3],
     },
     {
         id: 2,
-        name: 'Infinit war',
+        name: 'Avangers: Infinit war',
         villain_id: 2,
-        heroes_ids: [1, 2],
+        heroes_ids: [1, 2, 3],
+    },
+    {
+        id: 3,
+        name: 'Black Panther',
+        villain_id: 3,
+        heroes_ids: [3],
     },
 ];
 
@@ -82,9 +105,9 @@ const init = async () => {
 
     server.route({
         method: 'GET',
-        path: '/missions',
+        path: '/movies',
         handler: (request, h) => {
-            return missionsData;
+            return moviesData;
         },
     });
 

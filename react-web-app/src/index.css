@@ -5,6 +5,9 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/andromeda-galaxy-royalty-free-image-1585682435.jpg');
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 code {

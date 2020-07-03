@@ -16,7 +16,7 @@ const typeDefs = gql`
         photo: String!
     }
 
-    type Mission {
+    type Movie {
         id: ID
         name: String!
         villain: Villain!
@@ -24,7 +24,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        missions: [Mission!]!
+        getMovies: [Movie!]!
     }
 `;
 

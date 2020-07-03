@@ -3,7 +3,7 @@
 }
 
 .app-header {
-    background-color: #173f5f;
+    background-color: #173f5f52;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,17 +28,24 @@
     padding: 30px;
 }
 
-.mission {
+.movie {
     margin: 10px;
-    background-color: #3caea3;
+    background-color: #3caea3ce;
     border: 5px solid white;
     border-radius: 15px;
     padding: 20px;
     width: 250px;
+    cursor: pointer;
 
-    -webkit-box-shadow: 0 8px 12px -6px black;
-    -moz-box-shadow: 0 8px 12px -6px black;
-    box-shadow: 0 8px 12px -6px black;
+    -webkit-box-shadow: 0 10px 30px -6px rgb(255, 255, 255);
+    -moz-box-shadow: 0 10px 30px -6px rgb(255, 255, 255);
+    box-shadow: 0 10px 30px -6px rgb(255, 255, 255);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.movie:hover {
+    transform: scale(1.1);
 }
 
 .list-item {

@@ -6,8 +6,8 @@ class RestAPI extends RESTDataSource {
         this.baseURL = 'http://localhost:3030/';
     }
 
-    async getMissions() {
-        return this.get('missions');
+    async getMovies() {
+        return this.get('movies');
     }
 
     async getVillain(id) {

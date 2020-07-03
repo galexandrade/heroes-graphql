@@ -2,10 +2,10 @@
 // schema. This resolver retrieves books from the "books" array above.
 const resolvers = {
     Query: {
-        missions: (_source, _args, { dataSources }) =>
-            dataSources.restAPI.getMissions(),
+        getMovies: (_source, _args, { dataSources }) =>
+            dataSources.restAPI.getMovies(),
     },
-    Mission: {
+    Movie: {
         villain: (parent, _args, { dataSources }) => {
             return dataSources.restAPI.getVillain(parent.villain_id);
         },

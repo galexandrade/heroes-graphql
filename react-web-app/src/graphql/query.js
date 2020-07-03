@@ -1,9 +1,8 @@
-import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
-export const MISSIONS_QUERY = gql`
+export const MOVIES_QUERY = gql`
     {
-        missions {
+        getMovies {
             name
             villain {
                 name

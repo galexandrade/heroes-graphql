@@ -1,8 +1,8 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-const Mission = ({ name, villain, heroes }) => (
-    <div className="mission">
+const MovieCard = ({ name, villain, heroes }) => (
+    <div className="movie">
         <h2 className="title">{name}</h2>
         <div className="label">Villain:</div>
         <ListItem name={villain.name} photo={villain.photo} />
@@ -14,4 +14,4 @@ const Mission = ({ name, villain, heroes }) => (
     </div>
 );
 
-export default Mission;
+export default MovieCard;

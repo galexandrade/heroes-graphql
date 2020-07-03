@@ -1,24 +1,25 @@
 import React from 'react';
-import Mission from './components/Mission';
+import MovieCard from './components/MovieCard';
 import { useQuery } from '@apollo/react-hooks';
-import { gql } from 'apollo-boost';
-import { MISSIONS_QUERY } from './graphql/query';
+import { MOVIES_QUERY } from './graphql/query';
 import './App.css';
 
 const App = () => {
-    const { loading, error, data } = useQuery(MISSIONS_QUERY);
+    const { loading, error, data } = useQuery(MOVIES_QUERY);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error :(</p>;
 
+    const movies = data.getMovies;
+
     return (
         <div className="app">
             <header className="app-header">
-                <h1>Missions</h1>
+                <h1>Heroes movies</h1>
             </header>
             <div className="list">
-                {data.missions.map((mission, index) => (
-                    <Mission key={index} {...mission} />
+                {movies.map((movie, index) => (
+                    <MovieCard key={index} {...movie} />
                 ))}
             </div>
         </div>
