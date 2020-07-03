@@ -15,7 +15,7 @@ const App = () => {
     return (
         <div className="app">
             <header className="app-header">
-                <h1>Heroes movies</h1>
+                <h1>Heroes movies 🍿🎬</h1>
             </header>
             <div className="list">
                 {movies.map((movie, index) => (
