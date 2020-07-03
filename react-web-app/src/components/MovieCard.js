@@ -1,8 +1,8 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-const MovieCard = ({ name, villain, heroes }) => (
-    <div className="movie">
+const MovieCard = ({ name, link, villain, heroes }) => (
+    <div className="movie" onClick={() => window.open(link, '_blank')}>
         <h2 className="title">{name}</h2>
         <div className="label">Villain:</div>
         <ListItem name={villain.name} photo={villain.photo} />

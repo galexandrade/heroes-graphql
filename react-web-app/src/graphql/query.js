@@ -4,6 +4,7 @@ export const MOVIES_QUERY = gql`
     {
         getMovies {
             name
+            link
             villain {
                 name
                 photo

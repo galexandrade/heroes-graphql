@@ -19,6 +19,7 @@ const typeDefs = gql`
     type Movie {
         id: ID
         name: String!
+        link: String!
         villain: Villain!
         heroes: [Hero!]!
     }
